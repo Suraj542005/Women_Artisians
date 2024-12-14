@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background: #4a5b63; */
+  background: rgba(23, 23, 23);
+  /* background-image: url(https://images.assets-landingi.com/zLBBMzfT/Back.png); */
+}
+
+
+/* Add some basic CSS for styling the navigation bar */
+ul.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #232F3E;
+  /* background-color: #14181d; */
+  /* border: solid black; */
+  text-size-adjust: 80px;
+
+}
+
+li.nav-item {
+  float: left;
+  margin-left: 10px;
+}
+
+
+li.nav-item a {
+  font-size: 20px;
+  background: #232F3E;
+  opacity: 50%;
+  margin-top: 5px;
+  height: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin-right: 1.2cm;
+  border: 0.2px;
+}
+
+#nav {
+  font-size: 30px;
+  background: #232F3E;
+  opacity: 50%;
+  margin-top: 5px;
+  /* height: 20px; */
+  /* display: block; */
+  color: white;
+  /* margin-right: 40px; */
+
+  padding: 10px 16px;
+  text-decoration: none;
+  margin-right: 1.2cm;
+  border: 0.2px;
+}
+
+
+li.nav-item a:hover {
+  padding: 10px 16px;
+  height: 20px;
+  /* background-color: #969896; */
+  /* background: rgba(23, 23, 23); */
+
+  background: linear-gradient(90deg, #91cefd, #91cdfd .8%, #92ccfd 1.6%, #92cafc 2.4%, #93c9fc 3.2%, #93c8fc 4%, #93c8fc 0, #93c7fc 4.8%, #94c6fc 5.6%, #94c5fc 6.4%, #95c4fc 7.2%, #95c3fc 8%, #95c3fc 0, #95c2fc 8.8%, #96c1fc 9.6%, #96c0fb 10.4%, #97bffb 11.2%, #97befb 12%, #97befb 0, #97bdfb 12.8%, #98bcfb 13.6%, #98bbfb 14.4%, #99bafb 15.2%, #99b9fb 16%, #99b9fb 0, #99b8fb 16.8%, #9ab7fb 17.6%, #9ab7fa 18.4%, #9bb6fa 19.2%, #9bb5fa 20%, #9bb5fa 0, #9bb5fa 0, #9bb5fa 0, #9bb5fa 0, #9bb5fa 0, #9bb5fa 0, #9bb5fa 0, #9bb4fa 20.8%, #9cb3fa 21.6%, #9cb3f9 22.4%, #9db2f9 23.2%, #9db1f9 24%, #9db1f9 0, #9db0f9 24.8%, #9eaff9 25.6%, #9eaff9 26.4%, #9faef9 27.2%, #9fadf9 28%, #9fadf9 0, #9facf9 28.8%, #9facf9 29.6%, #a0abf8 30.4%, #a0abf8 31.2%, #a0aaf8 32%, #a0aaf8 0, #a0a9f8 32.8%, #a1a9f8 33.6%, #a1a8f8 34.4%, #a2a8f8 35.2%, #a2a7f8 36%, #a2a7f8 0, #a2a6f8 36.8%, #a3a6f8 37.6%, #a3a5f7 38.4%, #a4a5f7 39.2%, #a4a4f7 40%, #a4a4f7 0, #a4a4f7 0, #a4a4f7 0, #a4a4f7 0, #a4a4f7 0, #a4a4f7 0, #a4a4f7 0, #a5a4f7 40.8%, #a7a5f7 41.6%, #a8a5f7 42.4%, #aaa6f7 43.2%, #aba6f7 44%, #aba6f7 0, #aca6f7 44.8%, #ada7f7 45.6%, #afa7f6 46.4%, #b0a8f6 47.2%, #b1a8f6 48%, #b1a8f6 0, #b2a8f6 48.8%, #b3a8f6 49.6%, #b5a9f6 50.4%, #b6a9f6 51.2%, #b7a9f6 52%, #b7a9f6 0, #b8a9f6 52.8%, #b9aaf6 53.6%, #bbaaf5 54.4%, #bcabf5 55.2%, #bdabf5 56%, #bdabf5 0, #beabf5 56.8%, #bfacf5 57.6%, #c0acf5 58.4%, #c1adf5 59.2%, #c2adf5 60%, #c2adf5 0, #c2adf5 0, #c2adf5 0, #c2adf5 0, #c2adf5 0, #c2adf5 0, #c2adf5 0, #c3adf5 60.8%, #c4aef5 61.6%, #c5aef5 62.4%, #c6aff5 63.2%, #c7aff5 64%, #c7aff5 0, #c8aff5 64.8%, #c9aff5 65.6%, #cab0f4 66.4%, #cbb0f4 67.2%, #ccb0f4 68%, #ccb0f4 0, #cdb0f4 68.8%, #ceb1f4 69.6%, #ceb1f4 70.4%, #cfb2f4 71.2%, #d0b2f4 72%, #d0b2f4 0, #d1b2f4 72.8%, #d2b2f4 73.6%, #d3b3f3 74.4%, #d4b3f3 75.2%, #d5b3f3 76%, #d5b3f3 0, #d6b3f3 76.8%, #d7b4f3 77.6%, #d7b4f3 78.4%, #d8b5f3 79.2%, #d9b5f3 80%, #d9b5f3 0, #d9b5f3 0, #d9b5f3 0, #d9b5f3 0, #d9b5f3 0, #d9b5f3 0, #d9b5f3 0, #dab5f3 80.8%, #dbb6f3 81.6%, #dbb6f3 82.4%, #dcb7f3 83.2%, #ddb7f3 84%, #ddb7f3 0, #deb7f3 84.8%, #dfb7f3 85.6%, #dfb8f3 86.4%, #e0b8f3 87.2%, #e1b8f3 88%, #e1b8f3 0, #e2b8f3 88.8%, #e2b9f3 89.6%, #e3b9f2 90.4%, #e3baf2 91.2%, #e4baf2 92%, #e4baf2 0, #e5baf2 92.8%, #e6baf2 93.6%, #e6bbf2 94.4%, #e7bbf2 95.2%, #e8bbf2 96%, #e8bbf2 0, #e9bbf2 96.8%, #e9bcf2 97.6%, #eabcf2 98.4%, #eabdf2 99.2%, #ebbdf2);
+
+
+  /* background-color: #141b1f; */
+  opacity: 100%;
+  border: 0.2px solid white;
+  /* height: 2cm; */
+  /* padding-top: 2px;
+      margin: 5px; */
+}
+
+
+
+/* .main-char{ */
+/* align-items: center; */
+/* width: 80%; Set a width for the text container */
+/* float: left; */
+/* } */
+
+
+.img-char {
+  margin-left: 5%;
+  float: left;
+  margin-top: 100px;
+  border: 5px solid white;
+  border-radius: 2cm;
+  padding: 5px;
+  box-shadow: 5px 8px rgb(78, 72, 72);
+}
+
+
+/* .heading{
+      text-align: center;
+      padding-right: 20%;
+  } */
+
+.heading {
+  color: rgba(255, 255, 255);
+  /* height: 100px; */
+  font-size: 6rem;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  /* text-align: center; */
+}
+
+.after-heading-1 {
+  /* color: rgba(51,140,245); */
+  color: #34b7eb;
+
+}
+
+.after-heading-3 {
+  /* color: rgba(51,140,245); */
+  color: #34b7eb;
+}
+
+.h1-text {
+  text-align: center;
+  padding: 20px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 80px;
+  font-weight: 800;
+  /* background: red; */
+}
+
+.after-heading-3 {
+  font-size: 5.5rem;
+}
+
+
+.white-color {
+  color: aliceblue;
+  font-size: 2.2rem;
+  /* text-align: left; */
+  text-align: center;
+  /* padding-left: 50px;
+      padding-top: 100px; */
+  margin-top: 4cm;
+  /* margin-left: 15cm; */
+}
+
+
+.para {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+
+.sky-blue {
+  color: #34b7eb;
+  color: rgba(51, 140, 245);
+}
+
+.purple-color {
+  color: #b95df6;
+  /* color: rgba(107,70,193); */
+}
+
+
+.para-1 {
+  padding-left: 35%;
+}
+
+.esport-pg1 {
+  /* color: #d45dac; */
+  color: rgba(153, 153, 153);
+  padding-top: 20px;
+  margin-left: 15%;
+  padding-right: 15%;
+  font-size: 1.5rem;
+}
+
+.esport-pg2 {
+  /* color: #d45dac; */
+  color: rgba(153, 153, 153);
+  padding-top: 30px;
+  padding-left: 10%;
+  /* margin-right: 40%; */
+  padding-right: 40%;
+  font-size: 1.5rem;
+  /* background-image: url("IMG/COC_bacground.png"); */
+
+}
+
+
+
+
+.img-char-pg2 {
+  border: solid white;
+  border-radius: 1cm;
+  float: right;
+  /* margin-top: 2px; */
+  margin-right: 10%;
+  padding: 5px;
+  box-shadow: 4px 4px gray;
+  /* margin-right: 4%; */
+}
+
+
+.img-char-pg3 {
+  border: solid white;
+  border-radius: 2cm;
+  float: left;
+  margin-top: 2px;
+  margin-right: 2%;
+  margin-left: 4%;
+}
+
+
+.img-char-pg5 {
+  border: solid white;
+  border-radius: 2cm;
+  float: right;
+  margin-top: 60px;
+  margin-right: 6%;
+  margin-right: 4%;
+}
+
+
+.footer {
+  text-align: center;
+  margin-top: 2cm;
+  padding: 1%;
+  background-color: #232F3E;
+  /* background-color: #0f315b; */
+  /* color: rgba(255, 255, 255, 0.252); */
+  color: white;
+  word-spacing: 2px;
+}
+
+
+#logo {
+  float: right;
+  margin-right: 2%;
+  /* border: 5px solid rgba(23, 23, 23); */
+  border: 2px solid whitesmoke;
+  /* border: solid white; */
+  border-radius: 0.5cm;
+}
+
+.login-container {
+  opacity: 80%;
+  box-shadow: #eeeeef;
+  background: #232F3E;
+  border: 2px solid #ffffff;
+  border-radius: 2cm;
+  padding: 20px;
+  padding-left: 5cm;
+  padding-right: 5cm;
+  height: 10cm;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5cm;
+  margin-left: 25%;
+  margin-right: 30%;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+}
+
+
+label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background: rgb(83, 203, 27);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgb(43, 206, 112);
+  ;
+  /* background: #0056b3; */
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+  .navbar{
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+
+  .nav-item a{
+    color: lightgreen;
+  }
+
+  .heading {
+    margin-top: 10%;
+    /* color: yellow; */
+    font-size: 5vh;
+  }
+
+  .para{
+    font-size: 1rem;
+  }
+
+  .main-char{
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .main-char img{
+    height: 80vw;
+  }
+
+  .para-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .para-1 p{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .container{
+    margin-top: 20%;
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container img{
+    height: 80vw;
+    margin: 10px;
+  }
+
+  .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .parent div h1{
+    /* background: wheat; */
+    text-align: center;
+  }
+
+  .esport-pg2{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  li.nav-item {
+    float: left;
+    margin-left: 0px;
+  }
+
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
+
+  li.nav-item a {
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 2%;
+  }
+
+  #nav{
+    display: none;
+  }
+
+}
